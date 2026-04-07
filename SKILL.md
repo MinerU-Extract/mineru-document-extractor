@@ -1,6 +1,12 @@
 ---
 name: mineru
-description: MinerU document extraction CLI that converts PDFs, images, and web pages into Markdown, HTML, LaTeX, or DOCX via the MinerU API. Supports token-free flash extraction for quick start, precision extraction with table/formula recognition, web crawling, batch processing, and piped workflows.
+description: >
+  MinerU document extraction — the all-in-one CLI and agent skill for converting PDFs, scanned documents, images, Word (DOC/DOCX), PowerPoint (PPT/PPTX), and web pages into clean Markdown, HTML, LaTeX, or DOCX.
+  Powered by the MinerU API with two extraction modes: flash-extract for instant, zero-setup, no-login conversion (just run and get results), and precision extract with table recognition, formula recognition (LaTeX), OCR for scanned PDFs, VLM-based layout analysis, and batch processing of hundreds of files.
+  Use this skill when you need to: extract text from PDF, convert PDF to Markdown, turn a scanned document into editable text, parse academic papers with formulas and tables, convert Word documents to Markdown, batch process PDF files, crawl web pages to Markdown, read a PDF and get the text, OCR a scanned PDF, extract tables from documents, convert PowerPoint slides, or process images with OCR.
+  Supports 80+ languages across Latin, Arabic, Cyrillic, Devanagari, CJK, and more. Choose vlm model for highest accuracy on complex layouts, or pipeline model for zero-hallucination reliability.
+  Perfect for researchers, developers, data engineers, and anyone who needs reliable document parsing. Works as a Claude Code skill, MCP tool, or standalone CLI.
+  PDF提取、文档转Markdown、扫描件OCR、表格识别、公式识别、批量PDF处理、Word转Markdown、网页爬取转Markdown、图片OCR、学术论文解析。支持PDF、Word、PPT、图片等多格式文档转换，免登录快速提取或高精度专业提取。
 read_when:
   - Extracting text from PDF documents
   - Converting documents to Markdown
