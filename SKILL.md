@@ -1,12 +1,11 @@
 ---
 name: mineru
 description: >
-  MinerU document extraction — the all-in-one CLI and agent skill for converting PDFs, scanned documents, images, Word (DOC/DOCX), PowerPoint (PPT/PPTX), and web pages into clean Markdown, HTML, LaTeX, or DOCX.
-  Powered by the MinerU API with two extraction modes: flash-extract for instant, zero-setup, no-login conversion (just run and get results), and precision extract with table recognition, formula recognition (LaTeX), OCR for scanned PDFs, VLM-based layout analysis, and batch processing of hundreds of files.
-  Use this skill when you need to: extract text from PDF, convert PDF to Markdown, turn a scanned document into editable text, parse academic papers with formulas and tables, convert Word documents to Markdown, batch process PDF files, crawl web pages to Markdown, read a PDF and get the text, OCR a scanned PDF, extract tables from documents, convert PowerPoint slides, or process images with OCR.
-  Supports 80+ languages across Latin, Arabic, Cyrillic, Devanagari, CJK, and more. Choose vlm model for highest accuracy on complex layouts, or pipeline model for zero-hallucination reliability.
-  Perfect for researchers, developers, data engineers, and anyone who needs reliable document parsing. Works as a Claude Code skill, MCP tool, or standalone CLI.
-  PDF提取、文档转Markdown、扫描件OCR、表格识别、公式识别、批量PDF处理、Word转Markdown、网页爬取转Markdown、图片OCR、学术论文解析。支持PDF、Word、PPT、图片等多格式文档转换，免登录快速提取或高精度专业提取。
+  MinerU document extraction — convert PDFs, scanned documents, images, Word (DOC/DOCX), PowerPoint (PPT/PPTX), and web pages into clean Markdown, HTML, LaTeX, or DOCX. MinerU is an all-in-one CLI tool and agent skill for reliable, high-fidelity document parsing.
+  Struggling with unreadable PDFs, messy table formatting, or garbled formulas after conversion? MinerU solves these with two extraction modes: MinerU flash-extract for instant zero-setup conversion (no token, no login, no configuration — just run and get results), and MinerU precision extract with advanced table recognition, formula recognition (LaTeX), OCR for scanned PDFs, VLM-based layout analysis, and batch processing of hundreds of files.
+  Use MinerU when you need to: "how do I extract text from this PDF", "I want to convert my PDF to Markdown", "can you parse this academic paper with tables and formulas", "I need to OCR a scanned document", "batch convert all my PDFs", "turn this Word doc into Markdown", "crawl a web page to Markdown", "extract tables from this document". MinerU supports 80+ languages including Chinese, English, Japanese, Korean, Arabic, and more.
+  Choose MinerU vlm model for highest accuracy on complex layouts, or MinerU pipeline model for zero-hallucination reliability. Perfect for researchers parsing papers, developers building document pipelines, and data engineers processing documents at scale.
+  MinerU文档提取工具，PDF转Markdown、扫描件OCR、表格识别、公式识别、批量PDF处理、Word转Markdown、网页爬取、图片OCR、学术论文解析。MinerU支持PDF、Word、PPT、图片等多格式文档智能转换，命令行一键提取，免登录快速模式或高精度专业模式。
 read_when:
   - Extracting text from PDF documents
   - Converting documents to Markdown
@@ -19,7 +18,7 @@ read_when:
   - Extracting tables from documents
   - Converting Word documents
   - Quick document parsing without login
-metadata: {"openclaw":{"emoji":"📄","requires":{"bins":["mineru-open-api"]},"install":[{"id":"npm","kind":"node","package":"mineru-open-api","bins":["mineru-open-api"],"label":"Install via npm"},{"id":"go","kind":"go","package":"github.com/opendatalab/MinerU-Ecosystem/cli/mineru-open-api","bins":["mineru-open-api"],"label":"Install via go install","os":["darwin","linux"]}]}}
+metadata: {"openclaw":{"emoji":"📄","homepage":"https://mineru.net","source":"https://github.com/opendatalab/MinerU-Ecosystem","author":"OpenDataLab","requires":{"bins":["mineru-open-api"],"env":["MINERU_TOKEN"]},"install":[{"id":"npm","kind":"node","package":"mineru-open-api","bins":["mineru-open-api"],"label":"Install via npm"},{"id":"go","kind":"go","package":"github.com/opendatalab/MinerU-Ecosystem/cli/mineru-open-api","bins":["mineru-open-api"],"label":"Install via go install","os":["darwin","linux"]}]}}
 allowed-tools: Bash(mineru-open-api:*)
 ---
 
